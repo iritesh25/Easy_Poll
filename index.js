@@ -1,5 +1,4 @@
 const discord = require ('discord.js');
-
 var client = new discord.Client();
 const ms = require('ms');
 const token = ""
@@ -18,15 +17,20 @@ client.once('ready', () => {
 
 client.on("message",(message) => {
 
-
     if (message.author.bot) return;
     
     msg = message.content.toLowerCase();
     
     if (msg.startsWith (prefix + "hello")) {
         message.reply ('Hi!');
-        console.log(`User ID: ${message.author} + Message: ${message}`);
+        console.log(`Server Name: ${message.guild.name} User ID: ${message.author}  Message: ${message}`);
         
+    }
+
+//Information About Server And User
+if (msg.includes (prefix + "info")) {
+    message.channel.send(`Server name: ${message.guild.name}\nTotal members: ${message.guild.memberCount}\nYour username: ${message.author.username}\nYour ID: ${message.author.id}`);
+    console.log(`Server Name: ${message.guild.name} User ID: ${message.author}  Message: ${message}`);
     }
 
 
@@ -41,7 +45,7 @@ if (msg.includes (prefix + "poll")) {
             .setColor(0xFFC300)
             .setTitle("Easy Poll")
             .setDescription("Wrong Command Include Your Message!");
-            console.log(`User ID: ${message.author}  Message: ${message}`);
+            console.log(`Server Name: ${message.guild.name} User ID: ${message.author}  Message: ${message}`);
             if(!args[1]){
                 message.channel.send(Embed);
                 break;
@@ -58,5 +62,7 @@ if (msg.includes (prefix + "poll")) {
         break;
   }  }
 });
+
+
 
 client.login (token);
