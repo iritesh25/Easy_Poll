@@ -2,7 +2,7 @@ const discord = require ('discord.js');
 
 var client = new discord.Client();
 const ms = require('ms');
-const token = "NzI3Njk4NTg0MjQxNDM4ODIx.XvvpXQ.rdxXwlrjx10N_zFgiwG0M52M2ZY"
+const token = ""
 const emojiChannelID = '727510204635283487';
 
 const prefix = "+";
