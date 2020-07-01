@@ -1,0 +1,34 @@
+{
+  "name": "easy-poll",
+  "version": "1.0.0",
+  "description": "Make Polls Easily!",
+  "main": "index.js",
+  "scripts": {
+    "test": "+hello"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asubodh/Easy_Poll.git"
+  },
+  "keywords": [
+    "discord",
+    "poll",
+    "bot",
+    "easy",
+    "poll",
+    "asubodh",
+    "subodh",
+    "aryal"
+  ],
+  "author": "Subodh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asubodh/Easy_Poll/issues"
+  },
+  "homepage": "https://github.com/asubodh/Easy_Poll#readme",
+  "dependencies": {
+    "discord-anti-spam": "^2.4.1",
+    "discord.js": "^12.2.0",
+    "ms": "^2.1.2"
+  }
+}
