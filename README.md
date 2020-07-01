@@ -17,4 +17,5 @@
 3. Doesn't MessUp with Bots!
 
 
+Join Discord : https://discord.gg/BgrW5hT
 
