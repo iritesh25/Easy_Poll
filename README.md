@@ -18,6 +18,7 @@
 1. Because The Bot is Easy to Work With!
 2. The Message You Type Will Giving Command Will Get Deleted!
 3. Doesn't MessUp with Bots!
+4. Easy interface 
 
 
 Join Discord : https://discord.gg/BgrW5hT
